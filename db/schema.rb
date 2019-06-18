@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_06_05_194001) do
   enable_extension "plpgsql"
 
   create_table "addresses", force: :cascade do |t|
-    t.string "user_id"
+    t.integer "user_id"
     t.string "full_name"
     t.string "street"
     t.string "city"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2019_06_05_194001) do
   end
 
   create_table "cards", force: :cascade do |t|
-    t.string "user_id"
+    t.integer "user_id"
     t.string "card_holder"
     t.integer "card_number"
     t.integer "expiration_date"
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2019_06_05_194001) do
   end
 
   create_table "carts", force: :cascade do |t|
-    t.string "user_id"
-    t.string "item_id"
+    t.integer "user_id"
+    t.integer "item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -55,8 +55,8 @@ ActiveRecord::Schema.define(version: 2019_06_05_194001) do
   end
 
   create_table "purchase_items", force: :cascade do |t|
-    t.string "user_id"
-    t.string "item_id"
+    t.integer "user_id"
+    t.integer "item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
