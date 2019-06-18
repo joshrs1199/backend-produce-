@@ -6,5 +6,5 @@ class User < ApplicationRecord
   has_many :purchase_items
   has_many :carts
   has_many :items, through: :purchase_items
-  has_many :cart_items, through: :carts, class_name: "Item"
+  has_many :cart_items, through: :carts, source: :item
 end

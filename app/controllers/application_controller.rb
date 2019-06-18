@@ -12,8 +12,6 @@ class ApplicationController < ActionController::API
     end
   end
 
-  
-
   def find_current_user
     User.find_by(id: decode_token)
   end

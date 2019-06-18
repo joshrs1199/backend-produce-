@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   post '/login', to: 'auth#login'
   get '/auto_login', to: 'auth#auto_login'
   get '/songs', to: 'items#index'
-  get '/cart', to: 'carts#show'
+  post '/shoppingcart', to: 'carts#create'
+  delete '/shoppingcart', to: 'carts#destroy'
 end

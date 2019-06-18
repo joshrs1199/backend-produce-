@@ -6,7 +6,7 @@ class AuthController < ApplicationController
     #check if thier submitted password matches
     if @user && @user.authenticate(params[:password])
       token = JWT.encode({user_id: @user.id}, 'super_key')
-      render json: { user: @user, token: token}
+      render json: { user: @user, token: token, items: @user.cart_items }
     else
       render json: { errors: 'change to a status code' }
     end
@@ -16,7 +16,7 @@ class AuthController < ApplicationController
     @user = find_current_user
 
     if @user
-      render json: { user: @user }
+      render json: { user: @user, items: @user.cart_items }
     else
       render json: { errors: 'you changed localstorage' }
     end
