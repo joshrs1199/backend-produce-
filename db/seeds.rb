@@ -5,10 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Item.delete_all
 
-Item.create(name: 'song1', price: 1, videoid: 'uZC7Fm6OtJ0', sold: false, category: 'hiphop')
-Item.create(name: 'song2', price: 2, videoid: 'awDHDurBevk', sold: false, category: 'hiphop')
-Item.create(name: 'song3', price: 3, videoid: 'kRMvVxOGg7E', sold: false, category: 'hiphop')
-Item.create(name: 'song4', price: 4, videoid: 'fp1_DCBJfBw', sold: false, category: 'hiphop')
-Item.create(name: 'song5', price: 5, videoid: '7Guu0w9Lpbc', sold: false, category: 'hiphop')
-Item.create(name: 'song6', price: 6, videoid: 'aOT2PRchao8', sold: false, category: 'hiphop')
+Item.create(name: 'Drown (Prod. Noah Cuz)', price: 25, videoid: 'uZC7Fm6OtJ0', sold: false, category: 'hiphop')
+Item.create(name: 'Headshot (Prod. TOMMY FRANCO)', price: 100, videoid: 'awDHDurBevk', sold: false, category: 'hiphop')
+Item.create(name: 'Mood (Prod. PK)', price: 25, videoid: 'Wz1Le8WSPGI', sold: false, category: 'hiphop')
+Item.create(name: 'Space Coupe (Prod. Kiwi)', price: 75, videoid: 'fp1_DCBJfBw', sold: false, category: 'hiphop')
+Item.create(name: 'Eyes Closed (Prod. Azilio)', price: 50, videoid: '7Guu0w9Lpbc', sold: false, category: 'hiphop')
+Item.create(name: 'DRUM (prod. ESKRY)', price: 10, videoid: 'aOT2PRchao8', sold: false, category: 'hiphop')
+Item.create(name: 'Checks (Prod. DAK)', price: 50, videoid: '5WU4P8zz_e0', sold: false, category: 'hiphop')
+Item.create(name: 'Point (Prod. Klaxy x Fakeеss)', price: 25, videoid: '5ae7yFhdrOI', sold: false, category: 'hiphop')
+Item.create(name: 'influence (Prod. Satnero)', price: 20, videoid: 'n8cxo__DEXw', sold: false, category: 'hiphop')
+Item.create(name: 'Stay Running Away (prod. woodpecker)', price: 100, videoid: 'K2xts6AlJCE', sold: false, category: 'hiphop')
