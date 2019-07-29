@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/songs', to: 'items#index'
   post '/shoppingcart', to: 'carts#create'
   delete '/shoppingcart', to: 'carts#destroy'
+  post '/contactform', to: 'contacts#create'
 end
